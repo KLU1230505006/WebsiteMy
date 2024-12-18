@@ -1,0 +1,65 @@
+/* Navbar */
+.navbar {
+  background-color: white; /* Navbar arka plan rengi */
+  padding: 15px 20px; /* Navbar yüksekliğini artırmak için padding */
+}
+
+/* Navbar Brand */
+.navbar-brand img {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px; /* Yazı ile resim arasına boşluk */
+  border-radius: 50%; /* Köşeleri yuvarlar */
+}
+.paragraph-style {
+  color: white;
+  font-size: 22px;
+  line-height: 1.6; /* Daha okunabilir hale getirmek için satır yüksekliği */
+  margin-top: 20px; /* Üstten boşluk ekleyerek diğer içeriklerden ayırma */
+  font-weight: bolder; /* Yazı stilini normal yapma */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;  /* Arka plan rengi */
+  padding: 20px;
+  flex-wrap: wrap;  /* İçeriklerin sarılmasını sağlar */
+}
+
+.contact-info, .logo-slogan, .working-hours {
+  width: 30%;
+  text-align: left;
+}
+
+.logo-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Merkezi hizalama */
+  text-align: center;  /* Yazı ortalama */
+}
+
+.logo-slogan img {
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;  /* Köşeleri yuvarlatma */
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;  /* Alt alta sıralama */
+    align-items: center;  /* Merkezi hizalama */
+  }
+  
+  .contact-info, .logo-slogan, .working-hours {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;  /* Yazıları ortalar */
+  }
+}
+.social-media img {
+  width: 20px;
+  height: 30px;
+  margin: 0 5px;
+ 
+}
